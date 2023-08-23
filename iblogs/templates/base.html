@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> {% block title %} Default Page {% endblock %} </title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+</head>
+<body>
+
+{% include 'header.html' %}
+
+{% block content %}
+<h2><marquee>Welcome to iBlogs</marquee></h2>
+
+<p>A blog website is a site that is updated with new information on an ongoing basis and normally consists of a collection of posts.
+One of the greatest benefits of blogging is that it helps you connect and build relationships with leads and customers.
+If you are starting from scratch, blogging platforms like WordPress.com and Blogger allow you to get started for free.
+What Is A Blog Website?
+what is a blog website
+
+First, let’s go over the basics.
+
+What’s a blog? A blog is a piece of written content that is published on a web page or site.
+
+The topics of blogs can vary from person to person or even business to business.
+
+The main purpose of blogs is to convey information in a way that is more informal or conversational than other long-form written content.
+
+So now, what is a blog website? And how does it differ from your company’s main website?
+
+Let Us Grow Your Revenue...
+✅ Increase revenue with done-for-you marketing
+✅ Custom marketing strategy backed by data and results
+✅ Affordable marketing services with no long-term contract
+GET A CUSTOM PROPOSAL  🎉
+A blog website is a site that is updated with new information on an ongoing basis. It normally consists of a collection of posts.
+
+Posts may be short, informal, controversial, or more professional.
+
+There are a couple of things that set a blog apart from a traditional website. The first is that blogs are updated consistently.
+
+Whether a brand updates their blog daily, weekly, or monthly, they will be putting new content up on the blog regularly for readers to engage with.
+
+With a traditional site, you may still find yourself updating content from time to time.
+
+But, for the most part, the content remains the same for longer periods of time.
+
+The other main difference between a blog and a traditional website is that blog content encourages engagement.
+
+While a traditional website page provides information for the visitor and encourages them to take a specific action.
+
+Blog content provides the option for readers to comment and ask questions on individual posts.
+
+That means that visitors are engaging with your blog posts in a different way than they are your main site pages.</pre>
+
+</p>
+{% endblock %}
+
+
+{% include 'footer.html' %}
+<script>
+    M.AutoInit();
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="{% static 'js/owl.carousel.min.js'%}"></script>
+
+<script>
+    $(document).ready(function(){
+  $(".owl-carousel").owlCarousel(
+  {
+    dots : true,
+    loop: true,
+
+      autoplay: true,
+
+      nav: false,
+      responsiveClass: true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:false,
+            loop:true
+        }
+    }
+
+  }
+  );
+});
+
+
+
+
+</script>
+
+</body>
+</html>
